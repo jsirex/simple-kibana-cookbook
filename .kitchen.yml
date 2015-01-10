@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: latest
+
+platforms:
+  - name: opscode-debian-7.2.0
+    platform: debian
+    driver_config:
+      provision_command:
+        - apt-get -y install build-essential
+
+suites:
+  - name: default
+    run_list:
+      - recipe[simple-kibana]
+    attributes:
+      

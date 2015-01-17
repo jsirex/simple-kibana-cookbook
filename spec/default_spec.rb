@@ -11,7 +11,7 @@ describe 'simple-kibana::default' do
     expect(chef_run).to create_group('kibana')
   end
 
-  # No matchers in 0.9.0 Wait for new version
+  # No matchers in 0.9.0 ark. Wait for new version
   #  it 'arks kibana archive' do
   #    expect(chef_run).to install_ark('kibana')
   #  end

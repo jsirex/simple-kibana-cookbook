@@ -7,11 +7,14 @@ provisioner:
   require_chef_omnibus: latest
 
 platforms:
-  - name: opscode-debian-7.2.0
+  - name: chef/debian-7.7
     platform: debian
     driver_config:
       provision_command:
         - apt-get -y install build-essential
+
+  - name: chef/centos-7.0
+    
 
 suites:
   - name: default

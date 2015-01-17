@@ -15,8 +15,6 @@ end
 
 group :development do
   gem 'rake'
-  gem 'git'
-  gem 'colorize'
 end
 
 group :knife do

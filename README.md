@@ -1,6 +1,6 @@
 # Description
 
-This cookbooks install kibana 4.x only.
+This cookbook installs kibana 4.x only.
 It doesn't install or depends on java, apache, nginx, etc...
 
 # Requirements
@@ -19,16 +19,16 @@ It doesn't install or depends on java, apache, nginx, etc...
 
 * `node['kibana']['config']['port']` -  Defaults to `"5601"`.
 * `node['kibana']['config']['host']` -  Defaults to `"0.0.0.0"`.
-* `node['kibana']['config']['elasticsearch']` -  Defaults to `"http://localhost:9200"`.
+* `node['kibana']['config']['elasticsearch_url']` -  Defaults to `"http://localhost:9200"`.
 * `node['kibana']['config']['kibana_index']` -  Defaults to `".kibana"`.
 * `node['kibana']['config']['default_app_id']` -  Defaults to `"discover"`.
-* `node['kibana']['config']['request_timeout']` -  Defaults to `"60"`.
-* `node['kibana']['config']['shard_timeout']` -  Defaults to `"30000"`.
+* `node['kibana']['config']['request_timeout']` -  Defaults to `"300000"`.
+* `node['kibana']['config']['shard_timeout']` -  Defaults to `"0"`.
 * `node['kibana']['config']['verify_ssl']` -  Defaults to `"true"`.
-* `node['kibana']['config']['bundledPluginIds']` -  Defaults to `"[ ... ]"`.
-* `node['kibana']['download_url']` -  Defaults to `"https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-beta3.tar.gz"`.
-* `node['kibana']['checksum']` -  Defaults to `"d593af567c5dd814e59fb2bc2e11a194add6caa0f58c54c82da8fb708554aded"`.
-* `node['kibana']['version']` -  Defaults to `"4.0.0-beta3"`.
+* `node['kibana']['config']['bundled_plugin_ids']` -  Defaults to `"[ ... ]"`.
+* `node['kibana']['download_url']` -  Defaults to `"https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-linux-x64.tar.gz"`.
+* `node['kibana']['checksum']` -  Defaults to `"8f1de21f52803793dafeefe54f5b8933c2d3887ecbf69da6835430586b25cf2e"`.
+* `node['kibana']['version']` -  Defaults to `"4.0.0"`.
 * `node['kibana']['user']` -  Defaults to `"kibana"`.
 * `node['kibana']['group']` -  Defaults to `"kibana"`.
 * `node['kibana']['dir']` -  Defaults to `"/opt"`.

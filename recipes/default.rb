@@ -1,3 +1,3 @@
-%w( install configure service ).each do |r|
+%w( install configure service_runit ).each do |r|
   include_recipe "#{cookbook_name}::#{r}"
 end

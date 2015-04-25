@@ -3,5 +3,4 @@ file ::File.join(node['kibana']['dir'], 'kibana', 'config', 'kibana.yml') do
   owner node['kibana']['user']
   group node['kibana']['gorup']
   mode '0755'
-  notifies :restart, 'runit_service[kibana]'
 end

@@ -24,8 +24,9 @@ describe 'simple-kibana::default' do
     expect(chef_run).to start_runit_service('kibana')
   end
 
-  it 'runit service subscribes on file' do
+  it 'runit service subscribes on file and ark' do
     svc = chef_run.runit_service('kibana')
     expect(svc).to subscribe_to('file[/opt/kibana/config/kibana.yml]').delayed
+    expect(svc).to subscribe_to('ark[kibana]').delayed
   end
 end

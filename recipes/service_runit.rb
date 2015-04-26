@@ -9,6 +9,7 @@ runit_service 'kibana' do
     'home' => ::File.join(node['kibana']['dir'], 'kibana')
   )
   subscribes :restart, "file[#{cfg}]"
+  subscribes :restart, 'ark[kibana]'
 
   action [:enable, :start]
 end

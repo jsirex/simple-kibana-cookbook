@@ -18,5 +18,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[simple-kibana]
+      - recipe[simple-kibana-test]
     attributes:

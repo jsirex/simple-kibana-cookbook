@@ -71,6 +71,8 @@ Procfile
 #############
 cookbooks/*
 tmp
+.berkshelf/
+Berkshelf.lock
 
 # Cookbooks #
 #############
@@ -98,11 +100,6 @@ Vagrantfile
 .kitchen/
 .kitchen*.yml
 
-
-# Berkshelf #
-#############
-.berkshelf/
-
 # Reports #
 ###########
 reports/
@@ -110,3 +107,6 @@ reports/
 # Yardocs #
 ###########
 .yardoc/
+
+# Gemfile
+Gemfile.lock

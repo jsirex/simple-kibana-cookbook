@@ -2,6 +2,8 @@ DEPENDENCIES
   simple-kibana
     path: .
     metadata: true
+  simple-kibana-test
+    path: test/fixtures/cookbooks/simple-kibana-test
 
 GRAPH
   7-zip (1.0.2)
@@ -18,6 +20,8 @@ GRAPH
   simple-kibana (0.4.0)
     ark (>= 0.0.0)
     runit (>= 0.0.0)
+  simple-kibana-test (0.1.0)
+    simple-kibana (>= 0.0.0)
   windows (1.36.1)
     chef_handler (>= 0.0.0)
   yum (3.5.2)

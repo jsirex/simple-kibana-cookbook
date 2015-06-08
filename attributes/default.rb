@@ -7,3 +7,7 @@ default['kibana']['group'] = 'kibana'
 default['kibana']['dir'] = '/opt'
 
 default['kibana']['path']['logs'] = '/var/log/kibana'
+
+
+# For test:
+default['kibana']['calculated_version'] = "version now: #{node['kibana']['version']}"

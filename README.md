@@ -7,6 +7,20 @@ It doesn't install or depends on java, apache, nginx, etc...
 
 Override both `node['kibana']['download_url']`, `node['kibana']['checsum']`, `node['kibana']['version']`.
 
+# Custom init service
+
+This cookbook is designed to be wrapped by yours project cookbook.
+In this use-case you don't need to include simple-kibana::default recipe.
+
+Do something like this in yours default recipe:
+
+```ruby
+include_recipe 'simple-kibana::install'
+include_recipe 'simple-kibana::configure'
+include_recipe 'mywrapper-kibana::service_upstart' # I want to use upstart
+...
+```
+
 # Requirements
 
 ## Platform:
@@ -30,9 +44,9 @@ Override both `node['kibana']['download_url']`, `node['kibana']['checsum']`, `no
 * `node['kibana']['config']['shard_timeout']` -  Defaults to `0`.
 * `node['kibana']['config']['verify_ssl']` -  Defaults to `true`.
 * `node['kibana']['config']['bundled_plugin_ids']` -  Defaults to `[ ... ]`.
-* `node['kibana']['download_url']` -  Defaults to `https://download.elasticsearch.org/kibana/kibana/kibana-4.0.0-linux-x64.tar.gz`.
-* `node['kibana']['checksum']` -  Defaults to `8f1de21f52803793dafeefe54f5b8933c2d3887ecbf69da6835430586b25cf2e`.
-* `node['kibana']['version']` -  Defaults to `4.0.0`.
+* `node['kibana']['download_url']` -  Defaults to `https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz`.
+* `node['kibana']['checksum']` -  Defaults to `4cc36e5c6ca7c495667319df75feda1facb7c43a3d9686841f07a2522adec294`.
+* `node['kibana']['version']` -  Defaults to `4.0.2`.
 * `node['kibana']['user']` -  Defaults to `kibana`.
 * `node['kibana']['group']` -  Defaults to `kibana`.
 * `node['kibana']['dir']` -  Defaults to `/opt`.
@@ -48,4 +62,6 @@ Override both `node['kibana']['download_url']`, `node['kibana']['checsum']`, `no
 
 # License and Maintainer
 
-Maintainer: Yauhen Artsiukhou <jsirex@gmail.com>
+Maintainer:: Yauhen Artsiukhou (<jsirex@gmail.com>)
+
+License:: Apache 2.0

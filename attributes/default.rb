@@ -1,6 +1,6 @@
-default['kibana']['download_url'] = 'https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz'
-default['kibana']['checksum'] = '4cc36e5c6ca7c495667319df75feda1facb7c43a3d9686841f07a2522adec294'
-default['kibana']['version'] = '4.0.2'
+default['kibana']['download_url'] = 'https://download.elasticsearch.org/kibana/kibana/kibana-4.1.3-linux-x64.tar.gz'
+default['kibana']['checksum'] = 'f2cb5389ad0acfbc4006f739d75d5ede541483d1fa6be728bbf547a9d7ddeb4a'
+default['kibana']['version'] = '4.1.3'
 
 default['kibana']['user'] = 'kibana'
 default['kibana']['group'] = 'kibana'

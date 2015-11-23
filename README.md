@@ -44,9 +44,9 @@ include_recipe 'mywrapper-kibana::service_upstart' # I want to use upstart
 * `node['kibana']['config']['shard_timeout']` -  Defaults to `0`.
 * `node['kibana']['config']['verify_ssl']` -  Defaults to `true`.
 * `node['kibana']['config']['bundled_plugin_ids']` -  Defaults to `[ ... ]`.
-* `node['kibana']['download_url']` -  Defaults to `https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz`.
-* `node['kibana']['checksum']` -  Defaults to `4cc36e5c6ca7c495667319df75feda1facb7c43a3d9686841f07a2522adec294`.
-* `node['kibana']['version']` -  Defaults to `4.0.2`.
+* `node['kibana']['download_url']` -  Defaults to `https://download.elasticsearch.org/kibana/kibana/kibana-4.1.3-linux-x64.tar.gz`.
+* `node['kibana']['checksum']` -  Defaults to `f2cb5389ad0acfbc4006f739d75d5ede541483d1fa6be728bbf547a9d7ddeb4a`.
+* `node['kibana']['version']` -  Defaults to `4.1.3`.
 * `node['kibana']['user']` -  Defaults to `kibana`.
 * `node['kibana']['group']` -  Defaults to `kibana`.
 * `node['kibana']['dir']` -  Defaults to `/opt`.

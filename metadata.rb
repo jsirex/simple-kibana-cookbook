@@ -7,7 +7,7 @@ long_description 'Installs Kibana ~> 4.5. No less, no more'
 issues_url       'https://github.com/jsirex/simple-kibana-cookbook/issues' if respond_to?(:issues_url)
 source_url       'https://github.com/jsirex/simple-kibana-cookbook' if respond_to?(:source_url)
 
-version          '0.4.3'
+version          '1.0.0'
 
 depends 'ark'
 depends 'runit'

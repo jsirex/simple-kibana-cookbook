@@ -5,7 +5,7 @@ maintainer       'Yauhen Artsiukhou'
 maintainer_email 'jsirex@gmail.com'
 license          'Apache-2.0'
 description      'Installs Kibana ~> 4.6'
-version          '1.0.0'
+version          '1.1.0'
 
 issues_url       'https://github.com/jsirex/simple-kibana-cookbook/issues'
 source_url       'https://github.com/jsirex/simple-kibana-cookbook'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 include_recipe 'runit'
 
 cfg = ::File.join(node['kibana']['dir'], 'kibana', 'config', 'kibana.yml')

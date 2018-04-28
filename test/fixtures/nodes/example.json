@@ -1,0 +1,8 @@
+{
+  "name": "example",
+  "chef_environment": "example",
+  "run_list": [],
+  "default": {},
+  "override": {},
+  "automatic": {}
+}

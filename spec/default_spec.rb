@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'simple-kibana::default' do
-  cached(:chef_run) { ChefSpec::ServerRunner.new.converge described_recipe }
+  cached(:chef_run) do
+    ChefSpec::ServerRunner.new(platform: 'debian', version: '9.4').converge described_recipe
+  end
 
   it 'creates user for kibana' do
     expect(chef_run).to create_user('kibana')

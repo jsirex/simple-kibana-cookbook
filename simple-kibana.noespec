@@ -2,7 +2,7 @@ template-info:
 
   # Don't remove the name and version entries, which are ALWAYS required
   name: "chef-cookbook"
-  version: 1.3.0
+  version: 2.0.0
 
   # The following entries are information about the template itself and can safely
   # be removed on your own project.
@@ -15,31 +15,6 @@ template-info:
   links:
     source: https://github.com/jsirex/chef-cookbook.noe/tree/master
 
-  manifest:
-    spec/spec_helper.rb:
-      description: ChefSpec helper
-      safe-override: true
-
-    .gitignore:
-      description: Files to be ignored by git or another version control system
-      safe-override: true
-
-    .rubocop.yml:
-      description: Rubocop settings
-      safe-override: true
-
-    Gemfile:
-      description: Gemfile
-      safe-override: true
-
-    Rakefile:
-      description: Rakefile
-      safe-override: true
-
-    chefignore:
-      description: Files to be ignored by chef
-      safe-override: true
-
 # The following entries are template-related variables. Update to match your
 # own configuration.
 variables:
@@ -47,9 +22,9 @@ variables:
   name: simple-kibana
   maintainer: Yauhen Artsiukhou
   maintainer_email: jsirex@gmail.com
-  license: apache 2
-  description: Installs Kibana ~> 4.0
-  long_description: Installs Kibana ~> 4.0. No less, no more
+  license: Apache-2.0
+  description: Installs Kibana ~> 4.6
+  long_description: Installs Kibana ~> 4.6. No less, no more
   issues_url: https://github.com/jsirex/simple-kibana-cookbook/issues
   source_url: https://github.com/jsirex/simple-kibana-cookbook
-  version: 0.3.0
+  version: 1.0.0

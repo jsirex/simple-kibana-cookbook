@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Kibana is served by a back end server. This controls which port to use.
 default['kibana']['config']['port'] = 5601
 

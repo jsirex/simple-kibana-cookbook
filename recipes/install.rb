@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ark 'kibana' do
   url node['kibana']['download_url']
   owner node['kibana']['user']

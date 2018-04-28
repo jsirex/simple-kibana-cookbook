@@ -1,7 +1,7 @@
-This cookbook installs kibana 4.5.x only.
+This cookbook installs kibana 4.x only.
 It doesn't install or depends on java, apache, nginx, etc...
 
-Since kibana 4.5.x requires elasticsearch >= 2.3.0 you will have to install that version or more recent.
+Since kibana 4.x requires elasticsearch >= 2.3.0 you will have to install that version or more recent.
 
 # Usage
 

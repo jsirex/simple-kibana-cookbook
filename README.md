@@ -1,9 +1,9 @@
 # Description
 
-This cookbook installs kibana 4.5.x only.
+This cookbook installs kibana 4.x only.
 It doesn't install or depends on java, apache, nginx, etc...
 
-Since kibana 4.5.x requires elasticsearch >= 2.3.0 you will have to install that version or more recent.
+Since kibana 4.x requires elasticsearch >= 2.3.0 you will have to install that version or more recent.
 
 # Usage
 
@@ -28,6 +28,7 @@ include_recipe 'mywrapper-kibana::service_upstart' # I want to use upstart
 ## Platform:
 
 * debian
+* ubuntu
 * centos
 
 ## Cookbooks:
@@ -47,9 +48,9 @@ include_recipe 'mywrapper-kibana::service_upstart' # I want to use upstart
 * `node['kibana']['config']['elasticsearch.requestTimeout']` -  Defaults to `300000`.
 * `node['kibana']['config']['elasticsearch.shardTimeout']` -  Defaults to `0`.
 * `node['kibana']['config']['elasticsearch.startupTimeout']` -  Defaults to `5000`.
-* `node['kibana']['download_url']` -  Defaults to `https://download.elastic.co/kibana/kibana/kibana-4.5.0-linux-x64.tar.gz`.
-* `node['kibana']['checksum']` -  Defaults to `fa3f675febb34c0f676f8a64537967959eb95d2f5a81bc6da17aa5c98b9c76ef`.
-* `node['kibana']['version']` -  Defaults to `4.5.0`.
+* `node['kibana']['download_url']` -  Defaults to `https://download.elastic.co/kibana/kibana/kibana-4.6.6-linux-x86_64.tar.gz`.
+* `node['kibana']['checksum']` -  Defaults to `8c3c1808349ac9645836cae35c5570a53091b44b2212c0826907efae1a865d17`.
+* `node['kibana']['version']` -  Defaults to `4.6.6`.
 * `node['kibana']['user']` -  Defaults to `kibana`.
 * `node['kibana']['group']` -  Defaults to `kibana`.
 * `node['kibana']['dir']` -  Defaults to `/opt`.
@@ -57,16 +58,14 @@ include_recipe 'mywrapper-kibana::service_upstart' # I want to use upstart
 
 # Recipes
 
-* simple-kibana::configure
-* simple-kibana::default
-* simple-kibana::install
-* simple-kibana::service_runit
-* simple-kibana::user
+* simple-kibana::default - Installs Kibana ~> 4.6
 
 # License and Maintainer
 
 Maintainer:: Yauhen Artsiukhou (<jsirex@gmail.com>)
+
 Source:: https://github.com/jsirex/simple-kibana-cookbook
+
 Issues:: https://github.com/jsirex/simple-kibana-cookbook/issues
 
-License:: Apache 2.0
+License:: Apache-2.0
